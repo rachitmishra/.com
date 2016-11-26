@@ -1,0 +1,72 @@
+html, body{
+ height:100%;
+}
+
+.b {
+    background-color: #03A9F4;
+}
+
+.c{
+	margin:108px 0px;
+    color: white;
+}
+
+.d{
+	margin-top:32px;
+}
+
+.fa {
+	font-size: 20px;
+	padding:4px;
+    display:block;
+    color: #03A9F4;
+}
+
+.mm {
+	font: 60px roboto slab;
+}
+
+.mf {
+	margin-top:24px;
+	font: 28px roboto condensed;
+}
+
+.mb {
+	box-shadow: 0px 1px 1px #c0c0c0;
+	padding: 8px 4px;
+	background: #fafafa;
+	cursor: pointer;
+	margin-top:4px;
+	border-radius: 2px;
+}
+
+.mb:hover {
+	cursor: pointer;
+	box-shadow: 0px 2px 3px #bfbfbf;
+}
+
+.mb a {
+	text-decoration: none;
+	color: #454545;
+	font: 16px roboto condensed;
+	margin-top: 2px;
+    color: #03A9F4;
+}
+
+@keyframes waves{
+  from { background-position:200px bottom};
+  to { background-position:0px bottom};
+}
+
+.wave{
+   background: url('http://i.imgur.com/uFpLbYt.png') bottom repeat-x, #03A9F4;
+  -webkit-animation: waves 2s infinite alternate;
+  background-size: 200px 100px;
+  background-position:200px bottom;
+  opacity:1;
+}
+
+.tv {
+    position: relative;
+    top: 50%;
+}
