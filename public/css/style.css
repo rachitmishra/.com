@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  background-color: #000000;
+}
+
+.b {
+  background-color: #000000;
+}
+
+.c {
+  margin: 108px 0px;
+  color: white;
+}
+
+.d {
+  margin-top: 32px;
+}
+
+.fa {
+  font-size: 20px;
+  padding: 4px;
+  display: block;
+  color: #000000;
+}
+
+.mm {
+  font: 72px VT323;
+}
+
+.mf {
+  margin-top: 24px;
+  font: 36px VT323;
+}
+
+.mb {
+  padding: 8px 4px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.mb:hover {
+  cursor: pointer;
+}
+
+.mb a {
+  text-decoration: none;
+  color: #454545;
+  font: 18px VT323;
+  color: #03a9f4;
+}
+
+.mb svg {
+  margin-bottom: -6px;
+  margin-right: 4px;
+}
+
+.tv {
+  position: relative;
+  top: 100%;
+}
+
+.mc {
+  margin-top: 128px;
+  font: 36px VT323;
+}
