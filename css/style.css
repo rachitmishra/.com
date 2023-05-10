@@ -25,12 +25,12 @@ body {
 }
 
 .mm {
-  font: 72px VT323;
+  font: 72px League Spartan;
 }
 
 .mf {
   margin-top: 24px;
-  font: 36px VT323;
+  font: 36px League Spartan;
 }
 
 .mb {
@@ -46,7 +46,7 @@ body {
 .mb a {
   text-decoration: none;
   color: #454545;
-  font: 18px VT323;
+  font: 18px League Spartan;
   color: #03a9f4;
 }
 
@@ -62,5 +62,5 @@ body {
 
 .mc {
   margin-top: 128px;
-  font: 36px VT323;
+  font: 36px League Spartan;
 }
