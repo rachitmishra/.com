@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title> R73 - Rachit Mishra</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta itemprop="name" content="Blog Site" />
+        <meta itemprop="description" content="website showcasing my designs and my profile" />
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="stylesheets/stylerm.css" />
+		<link rel="stylesheet" media="screen and (min-width: 1200px)" href="stylesheets/styler.css" />
+		<link rel="stylesheet" media="screen and (max-width: 1200px)" href="stylesheets/styler3.css" />
+		<link rel="icon" type="image/x-icon" href="images\favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(window).resize(function(){
+           		var margin2 = $(window).width( )/2-$('#container').width( )/2;
+       			$('#container').css('margin-left',margin2);
+            });
+            
+            $(document).ready(function(){
+				var margin2 = $(window).width( )/2-$('#container').width( )/2;
+                $('#container').css('margin-left',margin2);
+
+                $('#resume').click( function(event) {
+                	event.preventDefault();
+                	$('.pure').fadeToggle();
+                	$('#overlay').slideToggle();
+   					$('#overlay').addClass('.loading');
+   					$.ajax ({
+                             	type:"GET",
+                             	url:"stylesheets/styler2.css",
+                             	dataType : "html", 
+                            }).done(function(data) {
+                            			$('#overlay').removeClass('loading');
+										$('#overlay').load('resume.htm');
+										$height = $('#overlay').height();
+				     	});
+   				} );
+
+                $('#close').click( function( ) {
+   					$('#overlay').slideToggle();
+   					$('.pure').fadeToggle();
+   				} );
+
+                $('.pure').click( function( ) {
+   					$('#overlay').slideToggle();
+   					$('.pure').fadeToggle();
+   				} );
+
+                $('#databox').click( function( ) {
+   					$( '.hide' ).slideToggle( );
+   					$('html, body').animate({scrollTop: $(".hide").offset().top}, 300); 
+   				} );
+
+				$('.posts').addClass('loading');
+                    $.ajax ({
+                             	type:"GET",
+                             	url:"http://api.tumblr.com/v2/blog/twntee.tumblr.com/posts/text?",
+                             	dataType : "jsonp",
+                             	data: {
+                             		api_key : "1cqESxaf9304Bdae6BiyOuH4LoGk57LGpHZOG3A6dDIKj1IWxA",
+                             		limit : "1" 
+                            }}).done(function(data) {
+										$('.posts').removeClass('loading');
+										$('.posts a').html(data.response.posts[0].title)
+										$('.posts a').attr("href",data.response.posts[0].post_url);
+										$('.posts p').html((data.response.posts[0].body).substr(0,400).replace("<i>","").replace("<i>","")+("  ...")+("<a href="+data.response.posts[0].post_url+">Read All</a>"));
+					 					});
+				     	});
+                        </script>
+		</head>
+	<body>
+		<div class="overlay">
+			<div class="close"></div></div>
+		<div class="pure white"></div>
+		<header>
+				<div id="logo"><a href="http://rachit.site44.com">R73</a></div>
+			<nav >
+				<ul >
+					<li class="nls"><a href="http://twntee.tumblr.com"><img src="images/ic_user.png"></a>
+					<ul><li>About Me</li></ul></li>
+					<li class="nls"><a href="http://codepalette.co.cc/works"><img src="images/ic_favorite.png"></a><ul><li>My Works</li></ul></li>
+					<li class="nls"><a href="http://twntee.tumblr.com"><img src="images/ic_write.png"></a>
+						<ul><li>Blog</li></ul></li>
+					<a id="resume" href="resume.htm"><li class="nls"><img src="images/ic_page.png">
+					<ul><li>Resume</li></ul></li></a>
+					<a href="mailto:twntee@gmail.com?Subject=Hi!"><li class="nls"><img src="images/ic_mail.png">
+						<ul><li>Contact Me</li></ul></li></a>
+					<li class="nls"><a><img src="images/ic_download.png">
+						<ul><li>Downloads</li></ul></a></li>
+					<li class="nls"><a><img src="images/ic_chat.png">
+						<ul><li>Chat</li></ul></a></li>
+					</ul>
+				</nav>
+			</header>
+		<div class="container">
+			<!--<section id="one" class="panels" >	
+				</section>-->
+			<a href="https://github.com/rachitrm"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+			<section id="zero" class="panels" >
+				<a class="git" href="http://stackoverflow.com/users/826657/rachit-mishra">
+				<img class="panels"src="http://stackoverflow.com/users/flair/826657.png?theme=clean" width="208" height="58" alt="Profile for Rachit Mishra at Stack Overflow, Q&amp;A for professional and enthusiast programmers." title="Profile for Rachit Mishra at Stack Overflow, Q&amp;A for professional and enthusiast programmers."></a>
+				</section>			
+
+			<section id="four" class="panels" >
+				<label>latest blog post : </label>
+					<div class="posts">	
+						<a href=""></a>
+						<p></p>
+					</div>
+			</section>
+
+			<section id="two" class="panels" >
+				<label>recent tweet : </label>
+				<div class="tweets">
+					<a class="twitter-timeline" data-widget-id="355561165067272193" data-dnt="true" href="https://twitter.com/rachit_rm"   data-chrome="noheader nofooter transparent noborders" data-tweet-limit="1"> <img src="images/loading.gif"></a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+
+			</section>
+
+			<section id="three" class="panels" >
+				<label>currently working on : </label><div class="content"> <div class="plogo"><img src="images/logo.png"></div>
+				<div class="project"><a class="source" href="http://www.github.com/rachitrm/ceeq">Ceeq - Mobile Security & Backup </a>
+									<br><a class="web" href="http://www.ceeq.in">http://www.ceeq.in</a>
+				</div></div>
+			</section>
+
+			<section id="six" class="panels" >
+				<label>write to me :  </label>
+				<div id="contact-form"><form action="actions.php" method="post">
+					<textarea id="databox"  class="inputs" name="data-content"></textarea>
+					<div class="hide">
+						<input class="inputs" name="contact-name" type="text" placeholder="Your name .. " required />
+						<input class="inputs" name="contact-email" type="email" placeholder="Your email .. " required />
+						<input  type="submit" value="Send" />
+						</div></form></div>
+			<div id="overlay"></div>
+				
+			 </div>
+		</body>
+</html>

@@ -1,0 +1,355 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, section, aside {
+     margin: 0px;
+     padding: 0px;
+}
+
+ul {
+     list-style: none outside none;
+}
+
+body {
+     background: url("../images/bg3.jpg") repeat scroll 0px 0% transparent;
+     margin: 0px;
+     min-width: 1024px;
+}
+
+header {
+     position: relative;
+}
+
+.loading {
+     background: url("../images/loading.gif") no-repeat scroll 21% 18% transparent;
+}
+
+
+#logo {
+     margin: 2px 6px;
+}
+
+#logo a {
+     background: none repeat scroll 0px 0px #DE0011;
+     border-radius: 4px 4px 4px 4px;
+     box-shadow: 0px 0px 2px #B5B5B5;
+     color: #FAFAFA;
+     font: bold 36px roboto;
+     margin: 16px;
+     padding: 3px 5px;
+     position: fixed;
+     text-decoration: none;
+     top: 10px;
+}
+
+#logo a span {
+     font-size: 24px;
+     position: relative;
+     top: -16px;
+}
+
+nav {
+     box-shadow: 0px 0px 2px #B5B5B5;
+     left: 24px;
+     margin-top: 120px;
+     padding: 0px;
+     position: fixed;
+     z-index: 2;
+}
+
+nav li {
+     background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9);
+     border-bottom: 1px solid #DADADA;
+     padding: 8px;
+     text-align: center;
+}
+
+nav img {
+     width: 90%;
+     opacity: 0.8;
+}
+
+nav li ul {
+     left: 62px;
+     position: absolute;
+}
+
+nav li ul li {
+     background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.6);
+     border-radius: 4px 4px 4px 4px;
+     box-shadow: 0px 0px 2px #DEDEDE;
+     color: whitesmoke;
+     display: none;
+     font: bold 13px roboto;
+     padding: 12px;
+     position: relative;
+     top: -36px;
+     width: 80px;
+}
+
+nav li ul li:after {
+     -moz-border-bottom-colors: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-color: rgba(120, 120, 120, 0) rgba(0, 0, 0, 0.6) rgba(120, 120, 120, 0) rgba(120, 120, 120, 0);
+     border-image: none;
+     border-style: solid;
+     border-width: 9px;
+     content: "";
+     height: 0px;
+     left: -18px;
+     pointer-events: none;
+     position: absolute;
+     top: 11px;
+     width: 0px;
+}
+
+nav ul li:hover {
+     cursor: pointer;
+}
+
+nav ul li:hover img{
+     opacity:1;
+}
+
+nav ul li:hover ul li {
+     display: block;
+}
+
+.container {
+     margin: 0px auto;
+     width: 990px;
+}
+
+.panels {
+     background: none repeat scroll 0px 0px #FBFAFC;
+     border-radius: 5px 5px 5px 5px;
+     box-shadow: 0px 0px 2px #C0C0C0;
+     margin-top: 32px;
+     width: 990px;
+}
+
+#zero {
+     background: none repeat scroll 0% 0% transparent;
+     box-shadow: none;
+     margin-top: -8px;
+}
+
+#one {
+     border-bottom: 1px solid red;
+     font: 14px roboto;
+     padding: 16px;
+     width: 960px;
+}
+
+#one a {
+     color: orange;
+}
+
+#one legend {
+     font: bold 28px roboto cn;
+}
+
+#two {
+     background: url("../images/twitter-bird.png") no-repeat scroll right 40%, none repeat scroll 0px 0px #FBFAFC;
+     border-bottom: 1px solid #00ACED;
+}
+
+#three {
+     border-bottom: 1px solid #CC0033;
+     height: 168px;
+     text-decoration: none;
+}
+
+#four {
+     background: url("../images/tumblr.png") no-repeat scroll right 108%, none repeat scroll 0px 0px #FBFAFC;
+     border-bottom: 1px solid teal;
+     height: 200px;
+}
+
+#five {
+     border-bottom: 1px solid gold;
+}
+
+.content {
+     margin-left: 5%;
+     left: 80px;
+     position: relative;
+     width: 600px;
+}
+
+.plogo {
+     float: left;
+}
+
+.plogo img {
+     border-radius: 12px 12px 12px 12px;
+     margin-top: -36px;
+     width: 140px;
+}
+
+.project {
+     float: left;
+     margin-left: 4%;
+}
+
+.project a {
+     color: #434343;
+     text-decoration: none;
+}
+
+.project .source {
+     font: 24px bebas;
+}
+
+.panels label, .panels label {
+     color: #434343;
+     font-family: roboto;
+     font-size: 17px;
+     padding: 40px;
+     position: relative;
+     top: 48px;
+}
+
+#six {
+     border-bottom: 1px solid grey;
+     height: auto;
+     margin-bottom: 20px;
+}
+
+#six label {
+     top: 30px;
+}
+
+.tweets, .content, .posts {
+     color: #0280DB;
+     font-family: roboto;
+     font-size: 16px;
+     height: 120px;
+     padding: 24px 172px;
+     width: 500px;
+}
+
+#twitter-widget-0 {
+     margin-top: -20px;
+}
+
+.posts {
+     margin-left: 24px;
+}
+
+.posts a {
+     color: teal;
+     text-decoration: none;
+}
+
+.posts p {
+     margin-top:4px;
+     color: #606060;
+     font: 14px roboto;
+}
+
+.hide {
+     display: none;
+     left: 180px;
+     margin-bottom: 10px;
+     position: relative;
+}
+
+.inputs {
+     border-radius: 5px 5px 5px 5px;
+     border: 1px solid #C3C3C3;
+     box-shadow: 0px 0px 1.5px #C3C3C3 inset;
+     display: inline;
+     font-family: roboto;
+     font-size: 14px;
+     margin: -10px 200px 12px;
+     padding: 8px;
+     position: relative;
+}
+
+textarea {
+     height: 36px;
+     padding: 8px;
+     position: relative;
+     width: 720px;
+}
+
+input[type="text"], [type="email"] {
+     height: 32px;
+     margin: 4px 20px 10px;
+     padding: 4px 8px;
+     width: 240px;
+}
+
+input[type="submit"] {
+     background: none repeat scroll 0% 0% #FF7400;
+     border-radius: 5px 5px 5px 5px;
+     border: 1px solid red;
+     box-shadow: 0px 0px 2px #B5B5B5;
+     color: white;
+     font-family: roboto;
+     font-size: 16px;
+     height: 42px;
+     width: 150px;
+}
+
+input[type="submit"]:hover {
+     box-shadow: 0px 0px 1.5px white inset;
+     cursor: pointer;
+}
+
+#overlay {
+     display: none;
+     position: absolute;
+     top: 20px;
+     width: 990px;
+     z-index: 12;
+}
+
+.white {
+     background: none repeat scroll 0px 0px rgba(255, 255, 255, 0.7);
+     cursor: pointer;
+     display: none;
+     height: 1060px;
+     margin-top: -32px;
+     position: absolute;
+     width: 100%;
+     z-index: 11;
+}
+
+#close {
+     background: none repeat scroll 0px 0px #F2023A;
+     border-radius: 4px 0px 0px 4px;
+     box-shadow: -1px 0px 1px #C5C5C5;
+     color: #F9F9F9;
+     font-family: arial rounded mt bold;
+     height: 20px;
+     padding: 8px;
+     position: absolute;
+     right: 25.5px;
+     top: 12px;
+     z-index: 14;
+}
+
+#close:hover {
+     cursor: pointer;
+}
+
+#share {
+     position: relative;
+     top: 35px;
+}
+
+#share ul li {
+     display: inline;
+     list-style: none outside none;
+}
+
+#share a {
+     font-family: roboto;
+     font-size: 16px;
+     text-decoration: none;
+}
+
+.git .panels {
+     width: 200px;
+}
